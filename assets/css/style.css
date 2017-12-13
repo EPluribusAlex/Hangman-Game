@@ -1,0 +1,24 @@
+html {
+	background-color: black;
+}
+
+.image_container {
+	position: relative;
+	width: 70%;
+	margin-left: 15%;
+}
+
+.title {
+	color: #6B1705;
+	position: absolute;
+	top: 20px;
+	left: 150px;
+	font-size: 50px;
+	font-weight: bold;
+}
+
+.subtitle {
+	color: green;
+	font-size: 30px;
+	text-align: center;
+}
