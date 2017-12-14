@@ -3,7 +3,7 @@ window.onload = function () {
 	var wins = 0;
 	var guessesLeft = 13;
 	var userGuessTally = [];
-	var gameWordList = ["cybernetic", "organism", "computer", "intelligence", "system", "framework"];
+	var gameWordList = ["agent", "augmentation", "android", "computer", "cybersecurity", "cybernetic", "device", "drone", "gadget", "hacker", "framework", "intelligence", "megacorporation", "organism", "system", "uplink", "virtual"];
 	//showing starting values
 	document.getElementById('winCounter').innerHTML = wins; 
 	document.getElementById('guessesLeft').innerHTML = guessesLeft; 
