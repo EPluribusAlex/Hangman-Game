@@ -1,18 +1,23 @@
 html {
-	background-color: white;
+	background-color: black;
 }
 
 .image_container {
 	position: relative;
 	width: 70%;
-	margin-left: 15%;
+	margin-left: 27%;
+}
+
+.main_image {
+	height: 400px;
+	width: auto;
 }
 
 .title {
 	color: #6B1705;
 	position: absolute;
-	top: 20px;
-	left: 150px;
+	top: 30px;
+	left: 30px;
 	font-size: 50px;
 	font-weight: bold;
 }
@@ -21,10 +26,29 @@ html {
 	color: green;
 	font-size: 30px;
 	text-align: center;
+	margin-top: 20px;
 }
 
 .word_space {
 	letter-spacing: 10px;
-	font-size: 40px;
+	font-size: 50px;
 	text-align: center;
+	color: red;
+	height: 80px;
+}
+
+.counter {
+	font-size: 20px;
+	color: yellow;
+	font-weight: bold;
+	margin-left: 15%;
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+
+.result {
+	font-size: 20px;
+	color: orange;
+	font-weight: bold;
+	margin-left: 15%;
 }

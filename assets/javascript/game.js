@@ -13,10 +13,9 @@ window.onload = function () {
 		var gameWord = gameWordList[Math.floor(Math.random() * gameWordList.length)];
 		var letters = Array.from(gameWord);
 
+		document.getElementById('note').innerHTML = "Type Letters on the Keyboard to Guess!";
+
 		var para = document.createElement('P');
-
-		document.getElementById('note').innerHTML = "Type Letters on the Kyboard to Guess!";
-
 		for(var i = 0; i < letters.length; i++) {
 			var t = document.createTextNode("_");
 			para.appendChild(t);
@@ -51,8 +50,7 @@ window.onload = function () {
 
 				if(revealedLetters.includes("_")) {
 
-				}
-				else {
+				} else {
 					document.getElementById('note').innerHTML = "You got it!  Press any key to play again.";
 					wins++;
 					document.getElementById('winCounter').innerHTML = wins;
@@ -66,6 +64,9 @@ window.onload = function () {
 						gameLoop();
 					}
 				}
+
+			//} else if(userGuessTally.includes('userGuess')) {
+			//console.log("repeated key, " + userGuess);
 
 			} 
 
@@ -84,9 +85,7 @@ window.onload = function () {
 						document.getElementById('guessesLeft').innerHTML = guessesLeft;
 						gameLoop();
 					}
-				} 
-
-				else {
+				} else {
 					userGuessTally.push(" " + userGuess);
 					document.getElementById('lettersTried').innerHTML = userGuessTally;
 				}
