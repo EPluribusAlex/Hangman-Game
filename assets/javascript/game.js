@@ -65,8 +65,8 @@ window.onload = function () {
 					}
 				}
 
-			//} else if(userGuessTally.includes('userGuess')) {
-			//console.log("repeated key, " + userGuess);
+			} else if(userGuessTally.includes(userGuess)) {
+				console.log("repeated key, " + userGuess);
 
 			} 
 
@@ -86,8 +86,8 @@ window.onload = function () {
 						gameLoop();
 					}
 				} else {
-					userGuessTally.push(" " + userGuess);
-					document.getElementById('lettersTried').innerHTML = userGuessTally;
+					userGuessTally.push(userGuess);
+					document.getElementById('lettersTried').innerHTML = userGuessTally.join(" ");
 				}
 			}
 		}
