@@ -1,5 +1,5 @@
 html {
-	background-color: black;
+	background-color: white;
 }
 
 .image_container {
@@ -20,5 +20,11 @@ html {
 .subtitle {
 	color: green;
 	font-size: 30px;
+	text-align: center;
+}
+
+.word_space {
+	letter-spacing: 10px;
+	font-size: 40px;
 	text-align: center;
 }
